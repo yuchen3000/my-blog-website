@@ -1,2 +1,2 @@
-# docker-website
-run a website in docker
+# my-blog-website
+run my-blog-website in docker
