@@ -1,6 +1,5 @@
 #!/bin/sh
 
-# rm -rf /etc/xray/config.json
 cat << EOF > /etc/xray/config.json
 {
   "log": {
@@ -8,7 +7,7 @@ cat << EOF > /etc/xray/config.json
   },
   "inbounds": [
     {
-      "port": 8000,
+      "port": 443,
       "protocol": "VLESS",
       "settings": {
         "clients": [
@@ -35,6 +34,5 @@ cat << EOF > /etc/xray/config.json
 }
 EOF
 
-#run xray
 
 xray -config=/etc/xray/config.json
